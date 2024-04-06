@@ -16,6 +16,12 @@ function cl() {
     echo "($num_dirs dir(s), $num_files file(s))"
 }
 
+# Create directory and cd into it
+make_cd() {
+    mkdir -p -- "$1" &&
+       cd -P -- "$1"
+}
+
 # Create a copy of [file] with .bak in the same directory.
 function bak() {
     cp --verbose "$1"{,.bak}

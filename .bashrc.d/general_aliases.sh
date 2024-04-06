@@ -5,7 +5,7 @@ alias ll='ls -l'                                                                
 alias lla='ll -A'                                                                   # list all files including hidden files with long format - show permissions
 alias sl='ln -s '                                                                   # create symlink | /sourcepath /destinationpath
 alias cpv='rsync -ah --info=progress2'                                              # copy with progress bar
-alias md='mkdir -pv'                                                                # create a directory and all parent directories with verbosity
+alias md='make_cd'                                                                # create a directory and all parent directories with verbosity
 alias rd='rm -rf'                                                                   # remove a directory with all its contents (including all interior directories)
 alias .='cd ..'                                                                     # go up one directory
 alias ..='cd ../..'                                                                 # go up two directories
@@ -16,7 +16,6 @@ alias vim='sudo vim'                                                            
 alias count='find . -type f | wc -l'                                                # count number of files in directory
 alias h='history'                                                                   # view the bash history
 alias exe='chmod +x'                                                                # make script file executable
-alias cd='cl'                                                                       # change to the specified directory and list its contents
 alias grep='grep --color=auto'                                                      # grep with colored output
 alias wget='wget -c'                                                                # wget with continue
 
