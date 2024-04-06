@@ -10,11 +10,6 @@
       "separator": "->  "
   },
   "modules": [
-      // {
-      //     "type": "title",
-      //     "format": "   {6}{7}{8}"
-      // },
-      // "break",
       {
           "type": "custom",
           "format": "┌───────────────────── \u001b[1mSoftware Information\u001b[0m ─────────────────────┐" // `\u001b` is `\033`, or `\e`
