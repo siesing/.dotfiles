@@ -1,6 +1,6 @@
 # .dotfiles
 
-Behold, the treasure trove of my .dotfiles containing .bash aliases, functions and configuration files! It's like a secret stash of awesomeness, tailored for openSUSE Tumbleweed. But hey, if you're rocking a different distro, fear not! Simply swap out the openSUSE file with one that contains your own magical aliases for your distro of choice, and let the party begin.
+Behold, the treasure trove of my .dotfiles containing .bash aliases, functions and configuration files! It's like a secret stash of awesomeness. Beyond the usual Linux aliases, we've got distro-specific ones for openSUSE Tumbleweed, Arch, and Fedora. Your command-line, your choice.
 
 > :heart: **Remember Sharing Is Caring**
 
@@ -26,6 +26,12 @@ Arch
 sudo pacman -S stow
 ```
 
+Fedora
+
+```console
+sudo dnf install stow
+```
+
 Debian/Ubuntu
 
 ```console
@@ -33,6 +39,8 @@ sudo apt install stow
 ```
 
 Then 'cd' into the `.dotfiles` directory. Now give those .dotfiles a high-five and hit the runway by running this [stow](https://www.gnu.org/software/stow/) command like there's no tomorrow.
+
+> Note that `stow` cannot replace existing configuration files, so make sure to remove them before running the command.
 
 ```console
 stow .
