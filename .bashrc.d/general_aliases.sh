@@ -19,6 +19,10 @@ alias exe='chmod +x'                                                            
 alias grep='grep --color=auto'                                                      # grep with colored output
 alias wget='wget -c'                                                                # wget with continue
 
+alias activeservices='sudo systemctl list-units --type=service'                     # list active (running and exited) services
+alias allservices='sudo systemctl list-units --type=service'                        # list all services (active and inactive)
+alias runningservices='sudo systemctl list-units --type=service'                    # list only running services
+
 alias myip='curl ipinfo.io/ip'                                                      # show public IP
 alias openports='netstat -tulanp'                                                   # show open ports
 alias now='date +"%Y-%m-%d" && date +"%T"'                                          # date and time
