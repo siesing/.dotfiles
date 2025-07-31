@@ -1,0 +1,53 @@
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor files
+*~
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Personal/sensitive files that shouldn't be shared
+.bashrc.d/personal_*
+.bashrc.d/work_*
+.bashrc.d/private_*
+
+# Local environment overrides
+.bashrc.local
+.gitconfig.local
+
+# Cache directories
+.cache/
+*.cache
+
+# Backup files
+*.bak
+*.backup
+*.orig
+
+# System-specific files that vary by machine
+.config/*/session*
+.config/*/state*
+.config/*/cache*
+
+# Kiro
+.kiro/
+
+# Claude
+.claude/
+CLAUDE.md
+
+# OpenCode
+AGENTS.md
