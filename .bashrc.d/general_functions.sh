@@ -6,9 +6,12 @@
 # and a strict "no eval" policy.
 # -----------------------------------------------------------------------------
 
-# Enable strict mode – abort on errors & undefined vars, safer word-splitting
-set -euo pipefail
-IFS=$'\n\t'
+# ----- Enable strict mode only for non-interactive shells – abort on errors & undefined vars, safer word-splitting -----
+if [[ $- != *i* ]]; then
+  set -euo pipefail
+  IFS=$'\n\t'
+fi
+# --------------------------------------------------------------------------------------------------------------------------
 
 # --- Internal helpers --------------------------------------------------------
 _warn() { printf 'bash-helpers: %s: %s\n' "$1" "$2" >&2; }
